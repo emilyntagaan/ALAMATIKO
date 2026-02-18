@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmptyBook">
+
+    <!-- Background -->
+    <ImageView
+        android:id="@+id/background_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Background Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <!-- Book frame stays visually on top -->
+    <ImageView
+        android:id="@+id/bookframe"
+        android:layout_width="394dp"
+        android:layout_height="664dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761"
+        app:srcCompat="@drawable/frame"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <!-- FrameLayout to host CurlView -->
+
+    <FrameLayout
+        android:layout_width="368dp"
+        android:layout_height="601dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676">
+
+        <!-- CurlView replaces the ImageView page -->
+        <fi.harism.curl.CurlView
+            android:id="@+id/page"
+            android:layout_width="315dp"
+            android:layout_height="509dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="34dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layerType="software"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/fairyNarrate"
+        android:layout_width="215dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="580dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/bookframe"
+        app:layout_constraintStart_toStartOf="@+id/bookframe"
+        app:srcCompat="@drawable/fairyfairy"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton66"
+        android:layout_width="89dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_btn" />
+
+    <!-- Fairy narrate button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

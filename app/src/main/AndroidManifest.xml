@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Alamatiko">
+        <activity
+            android:name=".EmptyBook"
+            android:exported="false"
+            android:hardwareAccelerated="false"/>
+        <activity
+            android:name=".KasaysayanTitle"
+            android:exported="false" />
+        <activity
+            android:name=".PaniniwalaTitle"
+            android:exported="false" />
+        <activity
+            android:name=".PaglalabanTitle"
+            android:exported="false" />
+        <activity
+            android:name=".PagibigTitle"
+            android:exported="false" />
+        <activity
+            android:name=".BayaniTitle"
+            android:exported="false" />
+        <activity
+            android:name=".PrutasGulayTitle"
+            android:exported="false" />
+        <activity
+            android:name=".BagayTitle"
+            android:exported="false" />
+        <activity
+            android:name=".HalamanTitle"
+            android:exported="false" />
+        <activity
+            android:name=".HayopTitle"
+            android:exported="false" />
+        <activity
+            android:name=".FifthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FourtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".thirdActivity"
+            android:exported="false" /> <!-- Ito yung second screen mo -->
+        <activity
+            android:name=".SecondActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.Alamatiko" /> <!-- Ito ang main screen -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LugarTitles" />
+        
+        <service android:name=".MusicService"
+            android:enabled="true"
+            android:exported="false"/>
+    </application>
+
+</manifest>
