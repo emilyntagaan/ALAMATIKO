@@ -204,7 +204,7 @@ We welcome contributions!
 - **Program**: BS Information Technology
 - **Specialization**: Frontend UI Design
 - **Passion**: Game Development & Cultural Preservation
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: [@YOUR_USERNAME](https://github.com/emilyntagaan)
 - LinkedIn: [Emilyn Tagaan](https://www.linkedin.com/in/emilyn-tagaan-8138003b0/)
 - Email: emilyntagaan18@gmail.com
 
